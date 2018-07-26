@@ -36,6 +36,8 @@ get_model()
 tasks=[1,2,3]
 print(tasks)
 
+"""n"""
+
 @app.route("/",methods=["GET","POST"])
 def send():
     #post me server request ko post krega while in get we are getting the data from the user/client
