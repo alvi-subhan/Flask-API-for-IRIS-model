@@ -71,7 +71,7 @@ def get_task(sl,sw,pl,pw):
     with graph.as_default():
         #preds = model.predict(image)
         prediction=model.predict(reshape_inputs2) #predicting the flower
-        #K.clear_session()
+        #K.clear_session() #not neccesaary
     correct_arg_prediction=np.argmax(prediction[0]) #taking the argument of the max probabiltiy
     prediction=prediction.tolist() #converting to the list
     prediction=prediction[0][correct_arg_prediction] #probability of the expected output
