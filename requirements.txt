@@ -1,5 +1,5 @@
 Flask
 gunicorn
-Keras==2.2.0
-tensorflow==1.5.0
+tensorflow
+Keras
 
