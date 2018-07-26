@@ -63,7 +63,7 @@ def send():
     return render_template("index.html") #receiving the data from the user (GET request)
 
 
-@app.route('/iris/api/v1.0/<int:sl>/<int:sw>/<int:pl>/<int:pw>',methods=['GET'])
+@app.route('/iris/api/v1.0/<float:sl>/<float:sw>/<float:pl>/<float:pw>',methods=['GET'])
 def get_task(sl,sw,pl,pw):
     reshape_inputs2=np.array([sl,sw,pl,pw]).reshape(1,4) #reshaping the array
     if len(reshape_inputs2[0]) != 4:
